@@ -9,4 +9,4 @@ choice=$(cat $dir/memes.txt | cut -f1 | $ddmenu)
 
 echo $choice
 
-cat $dir/memes.txt | grep "$choice" | cut -f2 | xargs -I {} xdotool type "{}"
+cat $dir/memes.txt | grep "$choice" | cut -f2 | xargs -I {} xdotool type --delay 24 '{}'
